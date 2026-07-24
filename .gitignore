@@ -1,0 +1,4 @@
+data/raw/
+*.gz
+.env
+.ipynb_checkpoints/
