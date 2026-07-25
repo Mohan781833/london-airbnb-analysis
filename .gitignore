@@ -2,3 +2,6 @@ data/raw/
 *.gz
 .env
 .ipynb_checkpoints/
+*.db 
+*.db 
+data/reviews_clean.csv 
