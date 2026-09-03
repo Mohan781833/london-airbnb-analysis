@@ -17,7 +17,7 @@ The Head of Portfolio at a London property management company, who needs evidenc
 ## Key findings
 
 - **69% price gap** between the most and least expensive boroughs (Westminster £350 vs Hackney £207 median), with direct implications for acquisition cost and pricing.
-- **Superhosts book far more** — a median of 83 booked nights/year versus 0 for non-Superhosts.
+- **Super hosts book far more** — a median of 83 booked nights/year versus 0 for non-Super hosts.
 - **Revenue is highly concentrated** — the top decile of listings accounts for 43% of estimated revenue.
 - **Price only weakly predicts revenue** (r = 0.35) — occupancy and host quality matter more than headline nightly rate.
 - **Negative reviews cluster on operational failures** ("hot water", "didn't work"), not price or location — a fixable problem.
@@ -26,7 +26,7 @@ The Head of Portfolio at a London property management company, who needs evidenc
 ## What's in the project
 
 - **Data pipeline (Python):** ingestion, cleaning, auditing, and feature engineering to an analysis-ready dataset.
-- **Machine learning:** Logistic Regression and Random Forest models predicting a `high_performer` listing target.
+- **Machine learning:** Logistic Regression and Random Forest models predicting a `high performer` listing target.
 - **NLP:** VADER sentiment analysis and TF-IDF over 2.24M reviews, including the non-English coverage audit above.
 - **Dashboard (Power BI):** four-page report on a star-schema model with 20+ DAX measures, row-level security, drill-through, and AI visuals (Key Influencers).
 - **Cloud version:** the pipeline re-implemented on Databricks using a medallion (bronze/silver/gold) architecture.
@@ -42,7 +42,7 @@ The Head of Portfolio at a London property management company, who needs evidenc
 **Borough & Property Analysis** — price by room type, price vs revenue (r = 0.35)
 ![Borough and Property Analysis](charts/dashboard_borough.png)
 
-**Revenue & Guest Experience** — Superhost occupancy, sentiment, Key Influencers, non-English caveat
+**Revenue & Guest Experience** — Super host occupancy, sentiment, Key Influencers, non-English caveat
 ![Revenue and Guest Experience](charts/dashboard_revenue.png)
 
 **Borough Detail** — drill-through page with top listings by estimated revenue
@@ -65,3 +65,10 @@ Python (pandas, scikit-learn, NLTK/VADER), SQL, Power BI (DAX, Power Query), Dat
 1. Download `listings.csv.gz` and `reviews.csv.gz` from Inside Airbnb into `data/raw/`.
 2. `pip install -r requirements.txt`
 3. Run the notebooks in order (Restart Kernel and Run All).
+
+
+
+## Responsible AI
+
+See [RESPONSIBLE_AI.md](RESPONSIBLE_AI.md) for intended use.
+bias findings, and deployment conditions.
