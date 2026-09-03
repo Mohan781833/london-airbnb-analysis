@@ -36,6 +36,8 @@ The Head of Portfolio at a London property management company, who needs evidenc
 <!-- Paste the Publish-to-web link on the next line once the tenant settings finish propagating. -->
 **Live report:** [add Publish-to-web link here]
 
+**Dashboard:** Full report exported as [dashboard/dashboard.pdf](dashboard/dashboard.pdf); page screenshots below; .pbix and PDF in /dashboard.
+
 **Executive Overview** — KPIs, revenue by borough, review growth
 ![Executive Overview](charts/dashboard_overview.png)
 
